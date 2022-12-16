@@ -11,11 +11,11 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/branding/css/branding.css"
+app_include_css = "/assets/branding/css/novacept.css"
 # app_include_js = "/assets/branding/js/branding.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/branding/css/branding.css"
+web_include_css = "/assets/branding/css/login.css"
 # web_include_js = "/assets/branding/js/branding.js"
 
 # include custom scss in every website theme (without file extension ".scss")
