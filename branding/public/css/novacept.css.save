@@ -12,7 +12,7 @@
   --card-bg:rgb(255 255 255 / 66%);
   --avatar-color-bg:var(--nova-secondary);
   --avatar-color-text:var( --n-white);
-  --dropdown-bg-color:#f3f3f3;
+
   
   }
 body {background-image:var(--bg-gradiant);}.page-container {background-image:var(--bg-gradiant) !important;}.page-head {background-image: var(--bg-gradiant) !important;} .nav-link{color:var( 
@@ -38,8 +38,8 @@ body {background-image:var(--bg-gradiant);}.page-container {background-image:var
   .page-actions .btn-default{--fg-color:var(--nova-secondary);--text-color:var( --n-white);}.page-actions .btn-default:hover{--fg-hover-color:var(--nova-primary);--text-color:var( --n-white);}.page-actions .btn-default .icon{--icon-stroke:var( --n-white);}
   .indicator-pill.yellow{--bg-yellow:#e8c6f0;}.layout-main-section{--fg-color:#3699d81a;}.avatar-frame.standard-image{background-color: var(--avatar-color-bg) !important; color: var(--avatar-color-text) !important;}
 .grid-footer, .grid-custom-buttons{background-color: transparent!important;}.form-in-grid .grid-delete-row .icon use { stroke: var(--n-white);}
+.awesomplete>ul {b}
 .novaBrandingClass{position: absolute; left: 0; top:0; right: 0; margin-left: auto; margin-right: auto;display: flex; justify-content: center; font-size:12px;text-align:center;font-weight: bold;}
-.awesomplete>ul {background-color:var(--dropdown-bg-color)!important}
 @media(max-width:1200px){
  #navbar-search{
   height: 30px !important;
