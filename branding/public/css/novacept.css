@@ -1,17 +1,17 @@
-:root {
-  --nova-primary:#61CE70;
-  --nova-secondary:#6EC1E4;
+/* :root {
+  --nova-primary:#4c7752;
+  --nova-secondary:#7fb19c;
   --primary:var(--nova-primary);
-  --n-white:#ffffff;
+  --n-white:#70755b;
   --bg-color: var( --n-white);
   --bg-gradiant: linear-gradient(90deg,rgba(56,189,248,0),#0ea5e90f 32.29%,#6c227d00 67.19%,rgb(236 72 153 / 4%));
   --navbar-bg:var(--n-white);
   --fg-hover-color:#c6d8e8;
-  --awesomplete-hover-bg:#61CE70;
+  --awesomplete-hover-bg:#8e6ebb;
   --sidebar-select-color:var(--nova-secondary);
   --card-bg:rgb(255 255 255 / 66%);
   --avatar-color-bg:var(--nova-secondary);
-  --avatar-color-text:var( --n-white);
+  --avatar-color-text:white;
   --dropdown-bg-color:#f3f3f3;
   --n-black:#000000;
   
@@ -24,7 +24,7 @@ body {background-image:var(--bg-gradiant);}.page-container {background-image:var
   .layout-side-section .sidebar-label{color:var(--bg-color);} .icon-btn{--icon-stroke:var(--nova-primary);} .layout-side-section .sidebar-label .icon{--icon-stroke:var( --n-white);} 
   div#driver-popover-item .driver-popover-footer button.driver-close-btn{--text-muted:var( --n-white);} .form-sidebar-stats{--icon-strok:var( --n-white);color:var(--bg-color);}
   #navbar-breadcrumbs a{color:var(--n-black);}#navbar-breadcrumbs li.disabled a{--text-muted:#ebebeb;}#navbar-breadcrumbs a:before{background: rgb(255 255 255 / 66%);border-radius: 
-  #100%;width: 19px;text-align: center;} .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, div#driver-popover-item 
+  #100;width: 19px;text-align: center;} .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, div#driver-popover-item 
   .driver-popover-footer .show>button.dropdown-toggle.driver-next-btn, div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled).active, 
   div#driver-popover-item .driver-popover-footer button.driver-next-btn:not(:disabled):not(.disabled):active{background-color: var(--nova-primary);border-color: var(--nova-primary);} 
   .indicator-pill-right.yellow .indicator-pill-round.yellow:after, .indicator-pill-right.yellow .indicator-pill-round.yellow:before, .indicator-pill.yellow:after, 
@@ -62,3 +62,9 @@ body {background-image:var(--bg-gradiant);}.page-container {background-image:var
    width: 38% !important;
  }
 }
+.footer-powered{
+	display: none!important;
+}
+li.dropdown.dropdown.dropdown-help.dropdown-mobile {
+	display: none!important;
+} */
