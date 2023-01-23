@@ -1,4 +1,7 @@
+from __future__ import unicode_literals
 from . import __version__ as app_version
+from . import __logo__ as app_logo
+
 
 app_name = "branding"
 app_title = "Branding"
@@ -6,12 +9,14 @@ app_publisher = "Novacept"
 app_description = "Branding for the Toolkit"
 app_email = "info@novacept.io"
 app_license = "MIT"
+app_logo_url = '/assets/branding/images/sample.jpg'
+
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/branding/css/novacept.css"
+# app_include_css = "/assets/branding/css/novacept.css"
 web_include_css = "/assets/branding/css/login.css"
 
 app_include_js = "/assets/branding/js/novacept.js"
@@ -46,6 +51,12 @@ app_include_js = "/assets/branding/js/novacept.js"
 # role_home_page = {
 #	"Role": "home_page"
 # }
+website_context = {
+	"favicon": app_logo or "/branding/public/images/sample.jpg",
+	"splash_image": app_logo or "/branding/public/images/sample.jpg"
+}
+after_migrate = ['whitelabel.api.whitelabel_patch']
+
 #system wizard 
 
 
@@ -192,3 +203,7 @@ boot_session = "branding.api.boot_session"
 # auth_hooks = [
 #	"branding.auth.validate"
 # ]
+
+override_whitelisted_methods = {
+	"frappe.utils.change_log.show_update_popup": "branding.api.ignore_update_popup"
+}

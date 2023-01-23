@@ -19,6 +19,16 @@ def update_field_label():
 	"""Update label of section break in employee doctype"""
 	frappe.db.sql("""Update `tabDocField` set label='ERP' where fieldname='erpnext_user' and parent='Employee'""")
 
+def whitelabel_patch():
+	#delete erpnext welcome page 
+	frappe.delete_doc_if_exists('Page', 'welcome-to-erpnext', force=1)
+	#update Welcome Blog Post
+	if frappe.db.exists("Blog Post", "Welcome"):
+		frappe.db.set_value("Blog Post","Welcome","content","")
+	update_field_label()
+	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('Color Branding', 'ignore_onboard_whitelabel'):
+		update_onboard_details()
+  
 def get_frappe_version():
 	return frappe.db.get_value("Installed Application",{"app_name":"frappe"},"app_version").split('.')[0]
 
